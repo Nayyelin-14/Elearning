@@ -1,4 +1,4 @@
-import UserProfile from "@/Appcomponents/UserProfile/UserProfile";
+import UserProfile from "@/Appcomponents/UserProfile/profile";
 import React from "react";
 import { useSelector } from "react-redux";
 

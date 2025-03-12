@@ -12,7 +12,7 @@ import { Switch } from "@mui/material";
 import { GetEnrolledCourses } from "@/EndPoints/user";
 import { toast } from "sonner";
 
-const UserProfile = () => {
+const Profile = () => {
   const { user } = useSelector((state) => state.user);
   const [enrolledCourses, setEnrolledCourses] = useState([]);
 
@@ -118,4 +118,4 @@ const UserProfile = () => {
   );
 };
 
-export default UserProfile;
+export default Profile;
