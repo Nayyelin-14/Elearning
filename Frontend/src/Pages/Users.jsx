@@ -1,6 +1,7 @@
-import AdminSide from "@/Appcomponents/AdminSide/Admin";
-import Usermanagement from "@/Appcomponents/AdminSide/Management/Usermanagement";
-import { getallusers } from "@/EndPoints/user";
+import { getallusers } from "../EndPoints/user";
+import AdminSide from "../Appcomponents/AdminSide/Admin";
+import Usermanagement from "../Appcomponents/AdminSide/Management/Usermanagement";
+
 import React, { useEffect, useState } from "react";
 import { toast } from "sonner";
 
