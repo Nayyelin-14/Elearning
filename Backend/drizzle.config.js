@@ -8,7 +8,11 @@ export default defineConfig({
   schema: "./db/index.js", // Path to your schema files
   out: "./Server/migration",
   dialect: "mysql",
+  breakpoints: false,
   dbCredentials: {
     url: process.env.DATABASE_URL,
+  },
+  experimentalFeatures: {
+    disableCheckConstraints: true, // Ignore CHECK constraints
   },
 });
