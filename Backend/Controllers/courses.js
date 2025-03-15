@@ -41,6 +41,7 @@ exports.getCourses = async (req, res) => {
       courses, // Send the fetched courses
     });
   } catch (error) {
+    console.log(error);
     return res.status(500).json({
       isSuccess: false,
       message: "An error occurred.",
@@ -325,8 +326,6 @@ exports.createCourse = async (req, res) => {
       instructor_image &&
       about_instructor
     ) {
-     
-  
       const NewCourse = await db
         .insert(allcourses)
         .values({
@@ -339,7 +338,7 @@ exports.createCourse = async (req, res) => {
           about_instructor,
           category: category,
           overview: overview,
-          rating : 0
+          rating: 0,
         })
         .$returningId();
       return res.status(200).json({
